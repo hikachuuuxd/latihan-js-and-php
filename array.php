@@ -29,16 +29,24 @@ if(isset($_POST['angka'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: rgb(37, 37, 37);
+            color : white;
+            margin: 5%;
+        }
+
+    </style>
     <title>Array</title>
 </head>
 <body>
     <form action="" method="post">
-        <label for="number">Masukkan Angka : </label><br>
-        <input type="number" name = 'satu'>
-        <input type="number" name = 'dua'>
-        <input type="number" name = 'tiga'>
-        <input type="number" name = 'empat'>
-        <input type="number" name = 'lima'>
+        <label for="number" style="display:block; margin-bottom: 10px">Masukkan Angka : </label>
+        <input type="number" name = 'satu' placeholder="pertama">
+        <input type="number" name = 'dua' placeholder="kedua">
+        <input type="number" name = 'tiga' placeholder="ketiga">
+        <input type="number" name = 'empat' placeholder="keempat">
+        <input type="number" name = 'lima' placeholder="kelima">
         <button type="submit" name="angka">Urutkan</button>
     </form>
 
