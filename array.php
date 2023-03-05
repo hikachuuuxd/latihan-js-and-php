@@ -1,26 +1,23 @@
 
- <!-- <?php
-$array = [6, 7];
-asort($array);
-arsort($array);
-echo print_r($array);
-
-$age = ["Peter"=>"35", "Ben"=>"37", "Joe"=>"43"];
-
-foreach($age as $x => $x_value) {
-  echo "Key=" . $x . ", Value=" . $x_value;
-  echo "<br>";
-}
-?>  -->
 
 <?php
+function sama($satu, $dua, $tiga, $empat, $lima){
+    $beda = $satu == $dua || $satu == $tiga || $satu == $empat || $satu == $lima || $dua == $tiga || $dua == $empat || $dua == $lima || $tiga == $empat || $tiga == $lima || $empat == $lima;
+    return $beda;
+}
    $angka = [];
 if(isset($_POST['angka'])){
-    $angka['satu'] = $_POST['satu'];
-    $angka['dua'] = $_POST['dua'];
-    $angka['tiga'] = $_POST['tiga'];
-    $angka['empat'] = $_POST['empat'];
-    $angka['lima'] = $_POST['lima'];
+    if(sama( $_POST['satu'],  $_POST['dua'],  $_POST['tiga'],  $_POST['empat'],  $_POST['lima'])){
+        echo "<script>
+            alert('Tidak boleh ada angka yang sama!');
+        </script>";
+    }else{
+        $angka['satu'] = $_POST['satu'];
+        $angka['dua'] = $_POST['dua'];
+        $angka['tiga'] = $_POST['tiga'];
+        $angka['empat'] = $_POST['empat'];
+        $angka['lima'] = $_POST['lima'];
+    }
 }
  
 
