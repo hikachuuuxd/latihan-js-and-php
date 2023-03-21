@@ -369,8 +369,58 @@ console.log(arr);
     console.log(arr.join('-'));
 */
 
-/* 5. Shift (Menghapus Array di awal Array)
+/* 6. Shift (Menghapus Array di awal Array)
     var arr = ['Asagiri', 'Maxaim', 'lalala', 'baba'];
     arr.shift();
     console.log(arr.join('-'));
 */
+
+/* 7. Splice (menyambung elemen di tengah index)
+    var arr = ['Asagiri', 'Maxaim', 'lalala', 'baba'];
+    // rumus splice(dimulai di index berapa, jumlah di hapus, value tambahan)
+    arr.splice(2, 2, 'elemen baru');
+    console.log(arr.join('-'));
+
+*/
+/* 8. Slice (mengiris array dengan menambah array baru)
+    var arr = ['Asagiri', 'Maxaim', 'lalala', 'baba'];
+    // rumus splice(awal, akhir)
+    var arr1 = arr.slice(1, 3);
+    console.log(arr1.join('-'));
+    // array lama masih bisa di akses
+    console.log(arr.join('-'));
+    */
+
+/* 9. forEach (menampilkan array)
+    var arr = ['Asagiri', 'Maxaim', 'lalala', 'baba'];
+    arr.forEach(function(e){
+        console.log(e);
+    });
+*/
+  
+
+/* 10. Map (menampilkan array dengan mengembalikan array)
+var arr = [1, 2, 3, 4,5 ];
+arr.map(function(e){
+    return e*2;
+});
+console.log(arr.join('-'));
+*/
+
+/*  11. Filter (menampilkan array per element dengan mengembalikan array)
+var arr = [1, 2, 3, 4,5 ];
+var ar = arr.filter(function(e){
+    return e == 4;
+});
+console.log(ar.join('-'));
+*/
+
+/* 12. Find (menampilkan satu nilai )
+var arr = [1, 2, 3, 4,5 ];
+var ar = arr.find(function(e){
+    return e == 4;
+});
+console.log(ar);
+*/
+
+
