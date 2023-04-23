@@ -1,5 +1,4 @@
-alert('Youkoso!');
-
+alert('Pemograman Dasar JS!');
 /* Pengulangan sederhana dengan pop up
     var ulang = true; 
 

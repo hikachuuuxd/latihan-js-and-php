@@ -1,5 +1,4 @@
 
-
 <?php
 function sama($satu, $dua, $tiga, $empat, $lima){
     $beda = $satu == $dua || $satu == $tiga || $satu == $empat || $satu == $lima || $dua == $tiga || $dua == $empat || $dua == $lima || $tiga == $empat || $tiga == $lima || $empat == $lima;
@@ -37,7 +36,7 @@ if(isset($_POST['angka'])){
         }
 
     </style>
-    <title>Array</title>
+    <title>Mengurutkan Angka</title>
 </head>
 <body>
     <form action="" method="post">
